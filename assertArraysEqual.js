@@ -1,4 +1,4 @@
-const eqArrays = function (arrOne, arrTwo) {
+const eqArrays = function(arrOne, arrTwo) {
   for (let i = 0; i < arrOne.length; i++) {
     if (arrOne[i] !== arrTwo[i]) {
       return false;
@@ -8,7 +8,7 @@ const eqArrays = function (arrOne, arrTwo) {
 };
 
 
-const assertArraysEqual = function(actual, expected) {  
+const assertArraysEqual = function(actual, expected) {
 
   if (eqArrays(actual, expected) === true) {
     console.log(`☑️ Assertion Passed: [${actual}] === [${expected}]`);
@@ -18,4 +18,4 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 //Test assertArraysEqual
-assertArraysEqual([1,2,3], [1,2,4], true)
+assertArraysEqual([1,2,3], [1,2,4], true);
