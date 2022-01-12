@@ -10,7 +10,8 @@ const countLetters = function (inputStr) {
   const results = {}
 
   for (const letter of inputStr) {
-      if (results[letter]) {
+    if (letter === ' ') continue;
+      else if (results[letter]) {
         results[letter] += 1
       } else {
         results[letter] = 1
@@ -20,7 +21,7 @@ const countLetters = function (inputStr) {
 }
 
 //Test
-console.log(countLetters('mississippi'))
+console.log(countLetters('missi ssippi'))
 console.log(countLetters('Potato'))
 
 let results1 = countLetters("Mississippi");
