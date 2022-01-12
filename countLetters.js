@@ -20,6 +20,9 @@ const countLetters = function (inputStr) {
 }
 
 //Test
-
 console.log(countLetters('mississippi'))
 console.log(countLetters('Potato'))
+
+let results1 = countLetters("Mississippi");
+
+assertEqual(results1.s, 4);
