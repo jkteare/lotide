@@ -17,24 +17,24 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-// without function which create a new array after removing specified elements. 
+// without function which create a new array after removing specified elements.
 
-const without = function (inputArray, itemsToRemove) {
+const without = function(inputArray, itemsToRemove) {
   let filteredResults = inputArray.slice();
 
-  for (i = 0; i < inputArray.length; i++ ) {
-    for (j = 0; j < itemsToRemove.length; j++) {
+  for (let i = 0; i < inputArray.length; i++) {
+    for (let j = 0; j < itemsToRemove.length; j++) {
       if (inputArray[i] === itemsToRemove[j]) {
-        filteredResults.splice(i, 1)
+        filteredResults.splice(i, 1);
       }
     }
   }
-  return filteredResults
-} 
+  return filteredResults;
+};
   
-console.log(without([1, 2, 3], [1])) // => [2, 3]
-console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
-console.log(without(["a", "b", "c"], ['a', 'b', 'c'])) // []
+console.log(without([1, 2, 3], [1])); // => [2, 3]
+console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
+console.log(without(["a", "b", "c"], ['a', 'b', 'c'])); // []
 
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
