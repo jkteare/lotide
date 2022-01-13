@@ -8,8 +8,8 @@ const assertEqual = function(actual, expected) {
 
 let head = function(list) {
   let x = list[0];
-  return x
-}
+  return x;
+};
 
 
 //Tests
