@@ -6,23 +6,23 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function (inputStr) {
-  const results = {}
+const countLetters = function(inputStr) {
+  const results = {};
 
   for (const letter of inputStr) {
     if (letter === ' ') continue;
-      else if (results[letter]) {
-        results[letter] += 1
-      } else {
-        results[letter] = 1
-      }
+    else if (results[letter]) {
+      results[letter] += 1;
+    } else {
+      results[letter] = 1;
+    }
   }
-  return results
-}
+  return results;
+};
 
 //Test
-console.log(countLetters('missi ssippi'))
-console.log(countLetters('Potato'))
+console.log(countLetters('missi ssippi'));
+console.log(countLetters('Potato'));
 
 let results1 = countLetters("Mississippi");
 
