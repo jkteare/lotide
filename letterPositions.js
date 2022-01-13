@@ -17,20 +17,20 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-const letterPositions = function (sentence) {
-const results = {}
+const letterPositions = function(sentence) {
+  const results = {};
 
-  for (j = 0; j < sentence.length; j++) {
-    if (sentence[j]=== ' ') continue
+  for (let j = 0; j < sentence.length; j++) {
+    if (sentence[j] === ' ') continue;
 
     else if (results[sentence[j]]) {
-      results[sentence[j]].push(j)
+      results[sentence[j]].push(j);
 
     } else {
-      results[sentence[j]] = [j]
+      results[sentence[j]] = [j];
     }
-}
-return results
-}
+  }
+  return results;
+};
 
-assertArraysEqual((letterPositions('hello').e), [1])
+assertArraysEqual((letterPositions('hello').e), [1]);
